@@ -6,6 +6,7 @@ import to_pdf  # my other script
 
 
 # change these
+TRY_TO_OCR = False
 IMAGE_PATH = r'data\images2'
 PEDOFILE_PATH = r'data\keylogger_output.pdf'
 KEYS = {'i', 'o'}
@@ -52,4 +53,4 @@ if __name__ == '__main__':
             while len(IMAGES) != COUNTER:
                 # waits for IMAGES to update since this is in a separate thread
                 pass
-            to_pdf.main(PEDOFILE_PATH, images=IMAGES)
+            to_pdf.main(PEDOFILE_PATH, images=IMAGES, ocr=TRY_TO_OCR)
