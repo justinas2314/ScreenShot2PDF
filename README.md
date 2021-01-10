@@ -2,7 +2,7 @@
 Take screenshots and put them to a pdf file
 ## Why should I use this?
 This makes screenshotting en masse much easier. If you want to save your teacher's slides/ presentation for later you can simply use this 
-to get everything you need in a compact ([maybe even searchable 👀)](https://ocr.space)) PDF format.  
+to get everything you need in a compact ([maybe even searchable 👀](https://ocr.space)) PDF format.  
 ## How to use this?
 Install `python` and all packages from `requirements.txt` (`pip install -r requirements.txt` in the directory with `requirements.txt`).
 Configure `main.py` (namely the global variables `IMAGE_PATH`, `PEDOFILE_PATH`, `KEYS`) and run.
