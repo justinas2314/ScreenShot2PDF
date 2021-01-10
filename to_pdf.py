@@ -2,7 +2,7 @@ import glob
 from PIL import Image
 
 
-def main(output_path: str, glob_path: str = None, images: [Image] = None, func=lambda x: x):
+def main(output_path: str, image_path: str = None, images: [Image] = None, func=lambda x: x):
     """
     Assumptions:
         Either `glob_path` or `images` is not None
@@ -14,7 +14,7 @@ def main(output_path: str, glob_path: str = None, images: [Image] = None, func=l
     """
     if images is None:
         images = [
-            Image.open(x) for x in sorted(glob.glob(glob_path),
+            Image.open(x) for x in sorted(glob.glob(f'{image_path}\\*.png'),
                                           key=lambda x: int(x.split('\\')[-1].replace('.png', '')))
         ]
     base, *rest = map(func, images)
@@ -22,4 +22,4 @@ def main(output_path: str, glob_path: str = None, images: [Image] = None, func=l
 
 
 if __name__ == '__main__':
-    main(r'data\output.pdf', r'data\images\*.png', func=lambda x: x.crop((0, 0, 1600, 1080)))
+    main(r'data\output.pdf', r'data\images', func=lambda x: x.crop((0, 0, 1600, 1080)))
