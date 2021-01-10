@@ -7,6 +7,8 @@ to get everything you need in a compact ([maybe even searchable 👀)](https://o
 Configure `main.py` (namely the global variables `IMAGE_PATH`, `PEDOFILE_PATH`, `KEYS`) and run.  
 While `main.py` is running you can take a screenshot by pressing every key in `KEYS` (`i` and `o` by default).  
 The screenshots will be saved in `IMAGE_PATH` as `IMAGE_PATH\{index}.png` while the PDF file will be saved as `PEDOFILE_PATH` (make sure this path ends in `.pdf`).  
+## Planned features
+I'll probably add a script that indexes the PDF file. For now you can use [this](https://ocr.space).  
 ### I want to crop a part of my screenshots out
 Run `main` from `to_pdf.py` with
 * `output_path` as the location you want your pdf to be  
