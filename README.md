@@ -2,14 +2,14 @@
 Take screenshots and put them to a pdf file
 ## Why should I use this?
 This makes screenshotting en masse much easier. If you want to save your teacher's slides/ presentation for later you can simply use this 
-to get everything you need in a compact ([maybe even searchable 👀](https://ocr.space)) PDF format.  
+to get everything you need in a compact (maybe even searchable) PDF format.  
 ## How to use this?
 Install `python` and all packages from `requirements.txt` (`pip install -r requirements.txt` in the directory with `requirements.txt`).
-Configure `main.py` (namely the global variables `IMAGE_PATH`, `PEDOFILE_PATH`, `KEYS`) and run.
+Configure `main.py` (namely the global variables `TRY_TO_OCR`, `IMAGE_PATH`, `PEDOFILE_PATH`, `KEYS`) and run.
 While `main.py` is running you can take a screenshot by pressing every key in `KEYS` (`i` and `o` by default).
 The screenshots will be saved in `IMAGE_PATH` as `IMAGE_PATH\{index}.png` while the PDF file will be saved as `PEDOFILE_PATH` (make sure this path ends in `.pdf`).
-## Planned features
-I'll probably add a script that indexes the PDF file. For now you can use [this](https://ocr.space).  
+## OCR
+If you want to use ocr install [this](https://github.com/jbarlow83/OCRmyPDF) first and then set `TRY_TO_OCR` to `True`.
 ### I want to crop a part of my screenshots out
 Run `main` from `to_pdf.py` with
 * `output_path` as the location you want your pdf to be
