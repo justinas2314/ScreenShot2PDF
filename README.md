@@ -1,5 +1,5 @@
 # ScreenShot2PDF
-Take screenshots and put them to a pdf file
+Take screenshots and put them in a pdf file
 ## Why should I use this?
 This makes screenshotting en masse much easier. If you want to save your teacher's slides/ presentation for later you can simply use this 
 to get everything you need in a compact (maybe even searchable) PDF format.  
